@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#000"
+    android:layout_height="match_parent"
+    tools:context=".ReproductoMusica">
+
+    <TextView
+        android:id="@+id/titleMusica"
+        android:text="Reproductor de musica"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@id/imageMusica"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/imageMusica"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toBottomOf="@id/titleMusica"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="300dp"
+        app:layout_goneMarginTop="40dp"
+        android:src="@drawable/musicportada"
+        android:layout_height="300dp"/>
+    <Button
+        android:id="@+id/atrasMusica"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/imageMusica"
+        app:layout_constraintEnd_toStartOf="@id/reproducirMusica"
+        android:layout_width="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/ic_back"
+        android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/reproducirMusica"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageMusica"
+        android:layout_width="50dp"
+        android:background="@drawable/ic_play"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/nextMusica"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/imageMusica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/reproducirMusica"
+        android:layout_width="50dp"
+        android:background="@drawable/ic_nextt"
+        android:layout_height="50dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
